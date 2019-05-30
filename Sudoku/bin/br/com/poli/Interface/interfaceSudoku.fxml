@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="sudokuAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="840.0" style="-fx-background-color: #00CCEE;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.poli.Interface.SudokuController">
+   <children>
+      <GridPane fx:id="sudokuGridPane" hgap="0.3" layoutX="22.0" layoutY="68.0" prefHeight="458.0" prefWidth="635.0" vgap="0.8">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="81.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="102.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="86.0" minHeight="1.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="txt00" onAction="#setValue00" prefHeight="11.0" prefWidth="54.0">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt01" layoutX="10.0" layoutY="9.0" onAction="#setValue01" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="1">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt02" layoutX="64.0" layoutY="9.0" onAction="#setValue02" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="2">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt03" layoutX="64.0" layoutY="9.0" onAction="#setValue03" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="3">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt12" layoutX="10.0" layoutY="9.0" onAction="#setValue12" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt11" layoutX="10.0" layoutY="9.0" onAction="#setValue11" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt10" layoutX="10.0" layoutY="9.0" onAction="#setValue10" prefHeight="11.0" prefWidth="54.0" GridPane.rowIndex="1">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt08" layoutX="10.0" layoutY="9.0" onAction="#setValue08" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="8">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt07" layoutX="10.0" layoutY="9.0" onAction="#setValue07" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="7">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt06" layoutX="10.0" layoutY="9.0" onAction="#setValue06" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="6">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt05" layoutX="10.0" layoutY="9.0" onAction="#setValue05" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="5">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt04" layoutX="10.0" layoutY="9.0" onAction="#setValue04" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="4">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt31" layoutX="10.0" layoutY="9.0" onAction="#setValue31" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt32" layoutX="10.0" layoutY="9.0" onAction="#setValue32" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt33" layoutX="10.0" layoutY="57.0" onAction="#setValue33" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt30" layoutX="10.0" layoutY="57.0" onAction="#setValue30" prefHeight="11.0" prefWidth="54.0" GridPane.rowIndex="3">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt28" layoutX="10.0" layoutY="57.0" onAction="#setValue28" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="8" GridPane.rowIndex="2">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt27" layoutX="442.0" layoutY="9.0" onAction="#setValue27" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="7" GridPane.rowIndex="2">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt26" layoutX="334.0" layoutY="9.0" onAction="#setValue26" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="6" GridPane.rowIndex="2">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt25" layoutX="226.0" layoutY="9.0" onAction="#setValue25" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt24" layoutX="280.0" layoutY="9.0" onAction="#setValue24" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt23" layoutX="226.0" layoutY="9.0" onAction="#setValue23" prefHeight="62.0" prefWidth="54.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt22" layoutX="226.0" layoutY="9.0" onAction="#setValue22" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt21" layoutX="10.0" layoutY="9.0" onAction="#setValue21" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt20" layoutX="10.0" layoutY="9.0" onAction="#setValue20" prefHeight="11.0" prefWidth="54.0" GridPane.rowIndex="2">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt18" layoutX="10.0" layoutY="9.0" onAction="#setValue18" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="8" GridPane.rowIndex="1">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt17" layoutX="10.0" layoutY="9.0" onAction="#setValue17" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="7" GridPane.rowIndex="1">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt16" layoutX="10.0" layoutY="9.0" onAction="#setValue16" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="6" GridPane.rowIndex="1">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt15" layoutX="10.0" layoutY="9.0" onAction="#setValue15" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt14" layoutX="10.0" layoutY="9.0" onAction="#setValue14" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt13" layoutX="10.0" layoutY="9.0" onAction="#setValue13" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt41" layoutX="334.0" layoutY="9.0" onAction="#setValue41" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt42" layoutX="118.0" layoutY="104.0" onAction="#setValue42" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt43" layoutX="64.0" layoutY="104.0" onAction="#setValue43" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt44" layoutX="442.0" layoutY="57.0" onAction="#setValue44" prefHeight="57.0" prefWidth="54.0" GridPane.columnIndex="4" GridPane.rowIndex="4">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt40" layoutX="10.0" layoutY="104.0" onAction="#setValue40" prefHeight="67.0" prefWidth="54.0" GridPane.rowIndex="4">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt38" layoutX="388.0" layoutY="57.0" onAction="#setValue38" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="8" GridPane.rowIndex="3">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt37" layoutX="334.0" layoutY="57.0" onAction="#setValue37" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="7" GridPane.rowIndex="3">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt36" layoutX="334.0" layoutY="57.0" onAction="#setValue36" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="6" GridPane.rowIndex="3">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt35" layoutX="280.0" layoutY="57.0" onAction="#setValue35" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="5" GridPane.rowIndex="3">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt61" layoutX="118.0" layoutY="198.0" onAction="#setValue61" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt60" layoutX="172.0" layoutY="198.0" onAction="#setValue60" prefHeight="11.0" prefWidth="54.0" GridPane.rowIndex="6">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt58" layoutX="226.0" layoutY="198.0" onAction="#setValue58" prefHeight="57.0" prefWidth="54.0" GridPane.columnIndex="8" GridPane.rowIndex="5">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt57" layoutX="10.0" layoutY="198.0" onAction="#setValue57" prefHeight="67.0" prefWidth="54.0" GridPane.columnIndex="7" GridPane.rowIndex="5">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt56" layoutX="442.0" layoutY="151.0" onAction="#setValue56" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="6" GridPane.rowIndex="5">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt55" layoutX="388.0" layoutY="151.0" onAction="#setValue55" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="5" GridPane.rowIndex="5">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt54" layoutX="10.0" layoutY="9.0" onAction="#setValue54" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="4" GridPane.rowIndex="5">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt48" layoutX="388.0" layoutY="151.0" onAction="#setValue48" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="8" GridPane.rowIndex="4">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt50" layoutX="334.0" layoutY="151.0" onAction="#setValue50" prefHeight="11.0" prefWidth="54.0" GridPane.rowIndex="5">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt47" layoutX="334.0" layoutY="151.0" onAction="#setValue47" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="7" GridPane.rowIndex="4">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt46" layoutX="118.0" layoutY="9.0" onAction="#setValue46" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="6" GridPane.rowIndex="4">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt51" layoutX="10.0" layoutY="9.0" onAction="#setValue51" prefHeight="57.0" prefWidth="54.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt52" layoutX="10.0" layoutY="9.0" onAction="#setValue52" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt53" layoutX="10.0" layoutY="9.0" onAction="#setValue53" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt34" layoutX="10.0" layoutY="9.0" onAction="#setValue34" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt64" layoutX="280.0" layoutY="151.0" onAction="#setValue64" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="4" GridPane.rowIndex="6">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt65" layoutX="10.0" layoutY="245.0" onAction="#setValue65" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="5" GridPane.rowIndex="6">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt66" layoutX="10.0" layoutY="245.0" onAction="#setValue66" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="6" GridPane.rowIndex="6">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="388.0" layoutY="198.0" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="7" GridPane.rowIndex="6">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt67" layoutX="334.0" layoutY="198.0" onAction="#setValue67" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="7" GridPane.rowIndex="6">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt68" layoutX="64.0" layoutY="245.0" onAction="#setValue68" prefHeight="57.0" prefWidth="54.0" GridPane.columnIndex="8" GridPane.rowIndex="6">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt70" layoutX="118.0" layoutY="245.0" onAction="#setValue70" prefHeight="11.0" prefWidth="54.0" GridPane.rowIndex="7">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt71" layoutX="172.0" layoutY="245.0" onAction="#setValue71" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt72" layoutX="10.0" layoutY="9.0" onAction="#setValue72" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="2" GridPane.rowIndex="7">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt73" layoutX="10.0" layoutY="9.0" onAction="#setValue73" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="3" GridPane.rowIndex="7">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt74" layoutX="10.0" layoutY="9.0" onAction="#setValue74" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="4" GridPane.rowIndex="7">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt75" layoutX="10.0" layoutY="9.0" onAction="#setValue75" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="5" GridPane.rowIndex="7">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt76" layoutX="10.0" layoutY="9.0" onAction="#setValue76" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="6" GridPane.rowIndex="7">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt77" layoutX="10.0" layoutY="9.0" onAction="#setValue77" prefHeight="57.0" prefWidth="54.0" GridPane.columnIndex="7" GridPane.rowIndex="7">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt78" layoutX="10.0" layoutY="9.0" onAction="#setValue78" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="8" GridPane.rowIndex="7">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt62" layoutX="10.0" layoutY="9.0" onAction="#setValue62" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt63" layoutX="10.0" layoutY="9.0" onAction="#setValue63" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="3" GridPane.rowIndex="6">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt80" layoutX="10.0" layoutY="9.0" onAction="#setValue80" prefHeight="11.0" prefWidth="54.0" GridPane.rowIndex="8">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt45" layoutX="10.0" layoutY="9.0" onAction="#setValue45" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="5" GridPane.rowIndex="4">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt81" layoutX="10.0" layoutY="9.0" onAction="#setValue81" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt82" layoutX="64.0" layoutY="9.0" onAction="#setValue82" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="2" GridPane.rowIndex="8">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt84" layoutX="388.0" layoutY="339.0" onAction="#setValue84" prefHeight="57.0" prefWidth="54.0" GridPane.columnIndex="4" GridPane.rowIndex="8">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt83" layoutX="388.0" layoutY="339.0" onAction="#setValue83" prefHeight="57.0" prefWidth="54.0" GridPane.columnIndex="3" GridPane.rowIndex="8">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt85" layoutX="442.0" layoutY="339.0" onAction="#setValue85" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="5" GridPane.rowIndex="8">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt86" layoutX="442.0" layoutY="339.0" onAction="#setValue86" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="6" GridPane.rowIndex="8">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt87" layoutX="172.0" layoutY="292.0" onAction="#setValue87" prefHeight="11.0" prefWidth="54.0" GridPane.columnIndex="7" GridPane.rowIndex="8">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt88" layoutX="172.0" layoutY="292.0" onAction="#setValue88" prefHeight="23.0" prefWidth="72.0" GridPane.columnIndex="8" GridPane.rowIndex="8">
+               <font>
+                  <Font name="AcadEref" size="25.0" />
+               </font>
+            </TextField>
+         </children>
+      </GridPane>
+      <Label fx:id="labelWelcomePlayer" graphicTextGap="5.0" layoutX="585.0" layoutY="16.0" prefHeight="42.0" prefWidth="245.0" text="Boa Sorte, player!">
+         <font>
+            <Font name="System Italic" size="20.0" />
+         </font></Label>
+      <Label fx:id="labelSudokuTitle" alignment="TOP_CENTER" layoutX="303.0" layoutY="-18.0" prefHeight="83.0" prefWidth="139.0" text="Sudoku">
+         <font>
+            <Font name="Freestyle Script" size="70.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelOBS" layoutX="663.0" layoutY="133.0" prefHeight="30.0" prefWidth="41.0" style="-fx-text-fill: #ff0000;" text="OBS.:" />
+      <Label fx:id="labelWarningENTER" layoutX="687.0" layoutY="163.0" prefHeight="49.0" prefWidth="139.0" text="Pressione ENTER para inserir o valor na célula" wrapText="true" />
+      <Label fx:id="labelLegenda" layoutX="663.0" layoutY="225.0" prefHeight="30.0" prefWidth="71.0" text="Legenda:" />
+      <Label fx:id="labelErrYellow" layoutX="663.0" layoutY="275.0" prefHeight="30.0" prefWidth="113.0" text="Fora do intervalo:" />
+      <Label fx:id="labelErrRed" layoutX="663.0" layoutY="361.0" prefHeight="30.0" prefWidth="113.0" text="Valor já utilizado:" />
+      <Label fx:id="labelErrPurple" layoutX="663.0" layoutY="459.0" prefHeight="30.0" prefWidth="89.0" text="Não Numérico:" />
+      <Pane fx:id="PaneErrRed" layoutX="769.0" layoutY="350.0" prefHeight="51.0" prefWidth="50.0" style="-fx-background-color: #ff0000;" />
+      <Pane fx:id="paneErrYellow" layoutX="769.0" layoutY="266.0" prefHeight="49.0" prefWidth="50.0" style="-fx-background-color: #fdff00;" />
+      <Pane fx:id="PaneErrPurple" layoutX="769.0" layoutY="448.0" prefHeight="51.0" prefWidth="50.0" style="-fx-background-color: #9600ff;" />
+      <Button fx:id="ButtonAutonomousPlayerExecuteMove" layoutX="195.0" layoutY="555.0" mnemonicParsing="false" onAction="#ButtonAutonomousPlayerExecuteMove" prefHeight="30.0" prefWidth="177.0" text="Executar Movimento">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelAutonomousPlayerIndicator" layoutX="22.0" layoutY="555.0" prefHeight="30.0" prefWidth="168.0" text="AutonomousPlayer:">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="ButtonAutonomousPlayerExecuteGame" layoutX="398.0" layoutY="555.0" mnemonicParsing="false" onAction="#ButtonAutonomousPlayerExecuteGame" prefHeight="30.0" prefWidth="177.0" text="Executar Jogo">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
